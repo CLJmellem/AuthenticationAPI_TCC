@@ -19,13 +19,17 @@ AuthenticationAPI_TCC is a .NET 9.0-based project designed to provide authentica
 1. Configure the database connection:
     -Open the `appsettings.json` file located in `src/Services/Authentication/Authentication.api/`.
     - Update the `DefaultConnection` string under `ConnectionStrings` with your SQL Server details.Configure the database connection:
-    ```"ConnectionStrings": {
-  "DefaultConnection": "Server=localhost,1433;Database=AuthenticatonAPI_TCC;User Id=<your-username>;Password=<your-password>;Encrypt=False;"
-}```
+    ```
+    "ConnectionStrings":{
+          "DefaultConnection": "Server=localhost,1433;Database=AuthenticatonAPI_TCC;User Id=<your-username>;Password=<your-password>;Encrypt=False;"
+        }
+    ```
 
 2. Apply database migrations:
-```cd src/Services/Authentication/Authentication.api
-dotnet ef database update```
+```
+cd src/Services/Authentication/Authentication.api
+dotnet ef database update
+```
 
 3. Run the application:
 ```dotnet run```
