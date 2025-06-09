@@ -45,5 +45,5 @@ dotnet ef database update
 - Ensure that SQL Server is running and accessible before starting the application.
 - Use the Development environment for local debugging, as configured in launchSettings.json.
 
-##License
+## License
 This project is licensed under the MIT License.
